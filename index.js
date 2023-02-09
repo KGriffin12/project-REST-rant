@@ -5,10 +5,10 @@ const app = express()
 app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
-    res.send('Hello world!')
+    res.send('Hello my name is Karlie!')
 })
 app.get('*', (req,res)=> {
-    res.status(404) .send('<h1>404 Page</h1>')
+    res.status(404) .send('<h1>404 This Page Cannot Be Found :( </h1>')
 })
 
 app.listen(process.env.PORT)
