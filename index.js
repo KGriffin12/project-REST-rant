@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.render('Home')
 })
 app.get('*', (req,res)=> {
-    res.status(404) .send('<h1>404 This Page Cannot Be Found :( </h1>')
+    res.render('error404')
 })
 
 app.listen(process.env.PORT)
