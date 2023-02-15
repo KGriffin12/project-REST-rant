@@ -15,6 +15,12 @@ router.get("/", (req, res) => {
         pic: 'https://patch.com/img/cdn20/users/1043655/20180509/045844/styles/raw/public/processed_images/coffee_cat_9-1525888754-5567.jpg?width=800'
       }]
       
+      router.post('/', (req, res) => {
+        console.log(req.body)
+        res.send('POST /places')
+      })
+      
+
   res.render("places/index", { places });
 });
 
