@@ -6,7 +6,9 @@ function index(data) {
     return (
       <div className="col-sm-6">
         <h2>{place.name}</h2>
-        <p className="text-center">{place.cuisines}</p>
+        <p className="text-center">
+          {place.cuisines}
+          </p>
         <img src={place.pic} alt={place.name} />
         <p className="text-center">
           Located in {place.city}, {place.state}
@@ -18,7 +20,9 @@ function index(data) {
     <Def>
       <main>
         <h1>Places to Rant About</h1>
-        <div className="row">{placesFormatted}</div>
+        <div className="row">
+          {placesFormatted}
+          </div>
       </main>
     </Def>
   );
