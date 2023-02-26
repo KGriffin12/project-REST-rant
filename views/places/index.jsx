@@ -16,14 +16,18 @@ function index(data) {
       </div>
     );
   });
-  
+
   return (
     <Def>
       <main>
         <h1>Places to Rant About</h1>
-        <div className="row">
-          {placesFormatted}
-          </div>
+        <div className="row">{placesFormatted}</div>
+
+        <div>
+          <a href="/">
+            <button className="btn btn-primary">HOME</button>
+          </a>
+        </div>
       </main>
     </Def>
   );
